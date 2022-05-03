@@ -1,0 +1,49 @@
+@import "color";
+
+.get-started {
+  padding: 50px 0 111px;
+
+  &__title {
+    max-width: 518px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    max-width: 458px;
+    font-size: 18px;
+    line-height: 28px;
+    color: $lightBlack;
+    margin-bottom: 45px;
+  }
+
+  &__info {
+    .btn-group {
+      .get-started-btn {
+        padding: 15px 41px 14px;
+        margin-right: 30px;
+      }
+
+      .get-started-btn-link {
+        text-decoration: none;
+
+        i {
+          font-size: 20px;
+        }
+
+        span {
+          margin-left: 9px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}

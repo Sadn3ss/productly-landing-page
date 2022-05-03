@@ -1,0 +1,31 @@
+@import "color";
+
+.container {
+  max-width: 1254px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.block {
+  overflow: hidden;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  color: $lightBlack;
+
+  &-bold {
+    font-weight: 700;
+  }
+}

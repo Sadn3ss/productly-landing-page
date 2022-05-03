@@ -1,0 +1,72 @@
+@import "color";
+
+.header {
+  padding: 22px 0 24px;
+
+  .menu {
+    margin-left: auto;
+    transition: .3s;
+    z-index: 10;
+
+    &__list {
+      list-style: none;
+
+      &-item {
+        margin-left: 27px;
+      }
+
+      &-link {
+        text-decoration: none;
+        color: $black;
+        transition: .2s;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .btn-group {
+    margin-left: 54px;
+
+    .btn:last-child {
+      margin-left: 14px;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+
+    &.active {
+      span {
+        &:nth-child(1) {
+          transform: translateY(6px) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          transform: translateY(-1px) rotate(135deg);
+        }
+
+        &:nth-child(3) {
+          transform: translateY(-8px) rotate(135deg);
+        }
+      }
+    }
+
+    span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: $black;
+      border-radius: 3px;
+      transition: .3s;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

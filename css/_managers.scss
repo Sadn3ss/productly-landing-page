@@ -1,0 +1,41 @@
+@import "color";
+
+.managers {
+  padding-top: 101px;
+
+  &__info {
+    max-width: 486px;
+  }
+
+  &__title {
+    padding-bottom: 22px;
+  }
+
+  &__subtitle {
+    &:nth-child(1) {
+      padding-bottom: 3px;
+    }
+
+    &:nth-child(3) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__list {
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      img {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}

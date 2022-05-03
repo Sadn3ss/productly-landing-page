@@ -1,0 +1,55 @@
+@import "color";
+
+.tools {
+  &__title {
+    max-width: 539px;
+    margin: 0 auto 46px;
+    text-align: center;
+  }
+
+  &__inner {
+    position: relative;
+    padding-bottom: 90px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: linear-gradient(rgba(255, 229, 210, 0.629261), rgba(255, 244, 229, 0.0001));
+      border-radius: 70% 70% 50% 50% / 90% 90% 0 0;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform: rotate(180deg);
+      z-index: -1;
+    }
+  }
+
+  &__items {
+    padding-bottom: 34px;
+  }
+
+  &__item {
+    max-width: 240px;
+
+    &-img {
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 13px;
+    }
+  }
+
+  &-btn {
+    display: block;
+    max-width: 175px;
+    padding: 15px 32px 14px 34px;
+    margin: 0 auto;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
