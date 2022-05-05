@@ -279,8 +279,97 @@ body {
   width: 100%;
 }
 
+.marketers {
+  padding: 104px 0 157px;
+}
+.marketers__info {
+  max-width: 486px;
+}
+.marketers__title {
+  padding-bottom: 22px;
+}
+.marketers__subtitle:nth-child(1) {
+  padding-bottom: 3px;
+}
+.marketers__subtitle:nth-child(3) {
+  padding-bottom: 30px;
+}
+.marketers__subtitle:nth-child(4), .marketers__subtitle:nth-child(6), .marketers__subtitle:nth-child(8) {
+  padding-bottom: 12px;
+}
+.marketers__subtitle:nth-child(5), .marketers__subtitle:nth-child(7) {
+  padding-bottom: 25px;
+}
+.marketers__img {
+  text-align: right;
+}
+.marketers__img img {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding: 116px 0 135px;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(255, 229, 210, 0.629261), rgba(255, 244, 229, 0.0001));
+  border-radius: 50% 50% 0 0/27% 27% 73% 73%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero__inner {
+  position: relative;
+  padding: 114px 0 244px;
+}
+.hero__inner .img {
+  position: absolute;
+}
+.hero__inner img:nth-of-type(1) {
+  top: 66px;
+  left: 0;
+}
+.hero__inner img:nth-of-type(2) {
+  right: 94px;
+  top: 0;
+}
+.hero__inner img:nth-of-type(3) {
+  bottom: 99px;
+  left: 0;
+}
+.hero__inner img:nth-of-type(4) {
+  bottom: 0;
+  left: 397px;
+}
+.hero__inner img:nth-of-type(5) {
+  bottom: 123px;
+  right: 0;
+}
+.hero__info {
+  text-align: center;
+  max-width: 542px;
+  margin: 0 auto;
+}
+.hero__title {
+  padding-bottom: 22px;
+}
+.hero__subtitle {
+  padding-bottom: 45px;
+  color: #567592;
+}
+.hero-btn {
+  padding: 15px 31px 14px 30px;
+  display: block;
+  max-width: 216px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1024px) {
-  .design__img img, .managers__img img {
+  .design__img img, .managers__img img, .marketers__img img {
     width: 80%;
   }
 }
@@ -327,12 +416,45 @@ body {
   .tools__item {
     margin-bottom: 30px;
   }
+
+  .hero__inner img:nth-of-type(1) {
+    top: 30px;
+    left: 0;
+  }
+  .hero__inner img:nth-of-type(2) {
+    right: 115px;
+    top: 0;
+  }
+  .hero__inner img:nth-of-type(3) {
+    bottom: 155px;
+    left: 0;
+  }
+  .hero__inner img:nth-of-type(4) {
+    bottom: 0;
+    left: 150px;
+  }
+  .hero__inner img:nth-of-type(5) {
+    bottom: 90px;
+    right: 60px;
+  }
 }
 @media screen and (max-width: 768px) {
-  .design__info, .managers__info {
+  .design__info, .managers__info, .marketers__info {
     max-width: 100%;
   }
-  .design__img, .managers__img {
+  .design__img, .managers__img, .marketers__img {
+    display: none;
+  }
+
+  .hero__inner img:nth-of-type(1) {
+    top: 0;
+    left: 50px;
+  }
+  .hero__inner img:nth-of-type(3) {
+    bottom: 50px;
+    left: 0;
+  }
+  .hero__inner img:nth-of-type(2), .hero__inner img:nth-of-type(4) {
     display: none;
   }
 }
@@ -370,6 +492,13 @@ body {
     flex-wrap: nowrap;
     flex-direction: column;
   }
+
+  .hero__inner {
+    padding: 0;
+  }
+  .hero__inner img:nth-of-type(1), .hero__inner img:nth-of-type(3), .hero__inner img:nth-of-type(5) {
+    display: none;
+  }
 }
 @media screen and (max-width: 425px) {
   .get-started {
@@ -385,6 +514,10 @@ body {
   }
   .get-started__info .btn-group .btn {
     width: 100%;
+  }
+
+  .hero:before {
+    border-radius: 80% 80% 0 0/37% 37% 73% 73%;
   }
 }
 @media screen and (max-width: 375px) {
