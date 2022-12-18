@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  max-width: 1254px;
+  max-width: 1154px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -88,8 +88,16 @@ body {
   justify-content: space-between;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .align-items-center {
   align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
 }
 
 .header {
@@ -309,7 +317,7 @@ body {
 
 .hero {
   position: relative;
-  padding: 116px 0 135px;
+  padding: 116px 0 165px;
 }
 .hero:before {
   content: "";
@@ -366,8 +374,103 @@ body {
   display: block;
   max-width: 216px;
   margin: 0 auto;
+  border: 0;
 }
 
+.strategies {
+  padding-bottom: 120px;
+}
+.strategies__inner .button-group .btn-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.strategies__inner .button-group .btn-dot:hover:not(.btn-dot-active) {
+  background-color: #CECECE;
+}
+.strategies__inner .button-group .btn-dot:not(:last-child) {
+  margin-right: 10px;
+}
+.strategies__inner .button-group .btn-dot-active {
+  background-color: #FF9900;
+}
+.strategies__title {
+  font-size: 34px;
+  padding-bottom: 9px;
+}
+.strategies__subtitle {
+  padding-bottom: 55px;
+}
+.strategies .slider {
+  overflow: hidden;
+}
+.strategies .slider__track {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+.strategies .slider .slide {
+  max-width: 348px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+.strategies .slider .slide:not(:last-child) {
+  margin-right: 40px;
+}
+.strategies .slider .slide:nth-child(3n+3) {
+  margin-right: 0;
+}
+.strategies .slider .slide__header img {
+  width: 348px;
+}
+.strategies .slider .slide__title {
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.strategies .slider .slide__info {
+  padding: 25px 0 39px;
+}
+.strategies .slider .slide__author {
+  font-size: 16px;
+  color: #544837;
+  padding-bottom: 12px;
+}
+.strategies .slider .slide__author span {
+  font-weight: 700;
+}
+.strategies .slider .slide__author span:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  margin: 0 5px 0 6px;
+  background-color: #544837;
+}
+.strategies .slider .slide:hover .slide__title {
+  color: #FF9900;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block .it {
+  width: 348px;
+  border: 1px solid;
+}
+
+@media screen and (max-width: 1160px) {
+  .strategies .slider .slider__track .slide:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .design__img img, .managers__img img, .marketers__img img {
     width: 80%;
@@ -491,6 +594,7 @@ body {
   .tools__items {
     flex-wrap: nowrap;
     flex-direction: column;
+    align-items: center;
   }
 
   .hero__inner {
